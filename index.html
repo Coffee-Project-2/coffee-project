@@ -6,19 +6,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+    <h1>Bianca and Benny's Coffee Shop!</h1>
 
     <form>
-        <label for="roast-selection"></label>
+        <label for="roast-selection"><h3>Search for Coffees</h3></label>
         <select id="roast-selection">
+            <option>all</option> //created "all" option to output all options.
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
+        <input id="search-box" type="text" />
+<!--        added search box input-->
         <input id="submit" type="submit" />
     </form>
+<!--    new form to add coffee by user input-->
+    <form class="add-coffee2">
+        <label for="add-coffee"><h3>Add a Coffee</h3></label>
+        <label for="roast-selection2"></label>
+        <select id="roast-selection2">
+            <option>all</option> //created "all" option to output all options.
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
 
-    <div id="coffees">
+
+        <input type="text" id="add-coffee" />
+    </form>
+<!--        <input id="submit2" type="submit" />-->
+<!--        <button onclick="myFunction()">Submit</button>-->
+        <input type="submit" onclick="myFunction()">
+
+    <h2 id="demo"></h2>
+
+
+
+    <div id="coffees">//div where list of coffees will appear
     </div>
 
     <script src="main.js"></script>
